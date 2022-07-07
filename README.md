@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/montyaction/Social-proof-section-solution)
-- Live Site URL: [Add live site URL here](https://musical-donut-12636d.netlify.app/)
+- Live Site URL: [Add live site URL here](https://zippy-nougat-9e3c26.netlify.app/)
 
 ## My process
 
@@ -49,7 +49,7 @@ During this project I learned that CSS allows you to add multiple background ima
           background-position: right bottom, left top;
           background-repeat: no-repeat, repeat;
       }
-```css
+```
 
 ### Continued development
 For future projects I need to focus on using more advanced CSS to create effects.
