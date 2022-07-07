@@ -10,7 +10,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  <!-- - [What I learned](#what-i-learned) -->
+  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -41,6 +41,15 @@ Users should be able to:
 - SCSS
 - Responsive
 
+### What I learned
+During this project I learned that CSS allows you to add multiple background images for an element.
+```css
+      .example {
+          background-image: url(first_url), url(second_url);
+          background-position: right bottom, left top;
+          background-repeat: no-repeat, repeat;
+      }
+```css
 
 ### Continued development
 For future projects I need to focus on using more advanced CSS to create effects.
