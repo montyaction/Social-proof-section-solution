@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+// ### Primary
+$v-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+
+// ### Neutral
+$dark-grayish: hsl(303, 10%, 53%);
+$light-grayish: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+/* CSS Rest */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $v-dark-magenta;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+}
+
+main {
+  max-width: 69.5rem;
+  width: 87.2%;
+  margin: 8.25rem auto 5.25rem;
+
+  .reviews-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    .main-text {
+      width: 450px;
+
+      .title {
+        width: 400px;
+        font-size: 1.8rem;
+        line-height: 1.05;
+        letter-spacing: -0.01em;
+        margin-bottom: 1rem;
+      }
+      .description {
+        color: $dark-grayish;
+        font-weight: 500;
+      }
+    }
+
+    // Review
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      max-width: 33.75rem;
+      width: 100%;
+      height: auto;
+      line-height: 0;
+      padding-top: 1.5rem;
+
+      .review {
+        display: flex;
+        gap: 2rem;
+
+        background-color: $light-grayish;
+        width: 27.75rem;
+        padding: 1.25rem 2rem;
+        border-radius: 0.5rem;
+
+        .review-star {
+          display: flex;
+          gap: 0.5rem;
+        }
+
+        .review-word {
+          font-weight: 700;
+          align-self: center;
+        }
+      }
+      .second {
+        align-self: center;
+      }
+
+      .third {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  // testimonials
+  .testimonials {
+    display: flex;
+    min-height: 16.75rem;
+    gap: 2rem;
+
+    .testimonial {
+      background-color: $v-dark-magenta;
+      color: $light-grayish;
+      width: 350px;
+      min-height: 225px;
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
+
+      .buyer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        gap: 1.5rem;
+
+        img {
+          border-radius: 50%;
+          width: 40px;
+          height: auto;
+        }
+
+        .buyer-name {
+          .name {
+            font-size: 1rem;
+            line-height: .9;
+          }
+
+          .verified-buyer {
+            color: $soft-pink;
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      // .para {
+      //   // font-size: 0.8rem;
+      // }
+    }
+
+    .colton {
+      align-self: flex-start;
+    }
+
+    .irene {
+      align-self: center;
+    }
+
+    .anne {
+      align-self: flex-end;
+    }
+  }
+}
+
+//  footer section
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+
+// media queries
+@media screen and (max-width: 1260px) {
+
+  .testimonials {
+    min-height: auto;
+    flex: 1;
+
+    .testimonial {
+      min-height: 17.25rem;
+      flex: 1;
+      
+      .irene,
+      .anne {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  main {
+    margin-top: 4rem;
+    
+    .reviews-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .main-text {
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        .title {
+          max-width: 300px;
+          width: 100%;
+          font-size: 1.3rem;
+          margin: 0 auto 1rem;
+        }
+      }
+
+      .reviews {
+        justify-content: center;
+        align-items: center;
+        line-height: 1.3;
+        padding-top: 0;
+
+        .review {
+          max-width: 340px;
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: .25rem;
+        }
+
+        .third {
+          align-self: center;
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 3rem;
+    
+    .testimonial {
+      max-width: 340px;
+      width: 100%;
+      align-self: center !important;
+      min-height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  body {
+    background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+  }
+  
+}
